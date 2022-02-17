@@ -1,6 +1,6 @@
 import trekago from '../images/trekago.jpg';
 
-function component() {
+function componentTrekago() {
     let m = document.createElement('main');
     let p = document.createElement('p');
     let img = document.createElement('img');
@@ -11,4 +11,4 @@ function component() {
     return m;
 }
 
-export default component;
+export default componentTrekago;
