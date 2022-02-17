@@ -1,26 +1,5 @@
-var showSecret = false;
+import style from '../css/main.css';
+import component from './component';
 
-secretButton.addEventListener('click', toggleSecretState);
-updateSecretParagraph();
-
-function toggleSecretState() {
-    showSecret = !showSecret;
-    updateSecretParagraph();
-    updateSecretButton()
-}
-
-function updateSecretButton() {
-    if (showSecret) {
-        secretButton.textContent = 'Hide the Secret';
-    } else {
-        secretButton.textContent = 'Show the Secret';
-    }
-}
-
-function updateSecretParagraph() {
-    if (showSecret) {
-        secretParagraph.style.display = 'block';
-    } else {
-        secretParagraph.style.display = 'none';
-    }
-}
+console.log("Trekago");
+document.body.append(component());
