@@ -1,13 +1,13 @@
-import trekago from '../images/trekago.jpg';
+import trekathon from '../images/trekathon.jpg';
 
-function componentTrekago() {
+function componentTrekathon() {
     let div = document.createElement('div');
     let img = document.createElement('img');
     div.appendChild(img);
-    img.src = trekago;
+    img.src = trekathon;
     img.alt = 'sample logo';
 
     return div;
 }
 
-export default componentTrekago;
+export default componentTrekathon;

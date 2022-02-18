@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=development",
-    "dev:trekago": "webpack serve --config ./webpack.trekago.config.js"
+    "build:trekago": "webpack --config ./webpack.trekago.config.js",
+    "dev:trekago": "webpack serve --config ./webpack.trekago.config.js",
+    "build:trekathon": "webpack --config ./webpack.trekathon.config.js",
+    "dev:trekathon": "webpack serve --config ./webpack.trekathon.config.js"
   },
   "author": "",
   "license": "",

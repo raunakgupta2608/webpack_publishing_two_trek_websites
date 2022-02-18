@@ -2,10 +2,49 @@ body {
     font-family: monospace;
     text-align: center;
     color: cornflowerblue;
-    background: coral;
+    background:  darkslategray;;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: aliceblue;
+    padding: 0 2% 0 0;
+}
+
+header div:nth-of-type(1) {
+    flex-grow: 3;
+    text-align: left;
+}
+header div:nth-of-type(1) {
+    flex-grow: 1;
+    text-align: left;
+}
+
+main .main-container {
+    display: flex;
+}
+main .main-container #left-part{
+    width: 25%;
+    margin: 2% 0 0 0;
+}
+main .main-container #left-part div, main .main-container #left-part div img{
+    width: 85%;
+    height: auto;
+}
+
+main .main-container #right-part{
+    width: 75%;
+    margin: 2% 0 0 0;
+    font-size: 20px;
+    font-family: cursive;
 }
 
 h1 {
     font-size: 28px;
     margin: 20px;
+}
+
+.text {
+    font-size: 20px;
 }

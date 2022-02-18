@@ -4,10 +4,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry : {
-        main: path.resolve(__dirname, 'src/js/trekago.js')
+        main: path.resolve(__dirname, 'src/js/trekathon.js')
     },
     output : {
-        path: path.resolve(__dirname, 'dist-trekago'),
+        path: path.resolve(__dirname, 'dist-trekathon'),
         filename: '[name].[contenthash].js',
         assetModuleFilename: '[name][ext]',
         clean: true
@@ -15,8 +15,8 @@ module.exports = {
 
     devtool: 'inline-source-map',
     devServer : {
-        static: path.resolve(__dirname, 'dist-trekago'),         
-        port: 5001,
+        static: path.resolve(__dirname, 'dist-trekathon'),         
+        port: 5002,
         open: true,
         hot: true
     },
@@ -46,7 +46,7 @@ module.exports = {
     //plugins
     plugins: [
         new HtmlWebpackPlugin({
-            title: "Trekago!!",
+            title: "Trekathon!!",
             filename: 'index.html',
             template: path.resolve(__dirname, 'src/temp.html'),
         }),
